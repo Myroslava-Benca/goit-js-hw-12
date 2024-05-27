@@ -30,7 +30,7 @@ async function onSearch(event) {
     const data = await fetchImages(query, page);
     hideLoader();
     if (data.hits.length === 0) {
-      notify('Sorry, there are no images matching your search query. Please try again!');
+      error('Sorry, there are no images matching your search query. Please try again!');
     } else {
       renderImages(data.hits);
       if (data.totalHits > 15) {

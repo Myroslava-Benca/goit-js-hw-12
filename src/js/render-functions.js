@@ -32,7 +32,8 @@ export const clearGallery = () => {
 export const notify = (message) => {
   iziToast.info({
     title: '',
-    message: message
+    message: message,
+     position: 'topRight'
   });
 };
 
