@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.1.3/simple-lightbox.min.css" />
+    <style>
+        .loading-message {
+            display: none; /* Приховуємо повідомлення за замовчуванням */
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .loading-message.active {
+            display: block; /* Показуємо повідомлення, коли воно активне */
+        }
+    </style>
+  <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-b0d10f48.js">
+  <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-1cd1f9d9.css">
+  <link rel="stylesheet" href="/goit-js-hw-12/assets/index-5ef226bd.css">
+</head>
+<body>
+    <form class="search-form" id="search-form">
+        <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images...">
+        <button class="search-button" type="submit">Search</button>
+    </form>
+    <div class="loading-message" id="loading-message">Loading images, please wait...</div>
+    <div class="gallery"></div>
+    <button type="button" class="load-more" style="display: none;">Load more</button>
+    <div class="loader" style="display: none;">Loading images, please wait...</div>
+
+    
+</body>
+</html>
