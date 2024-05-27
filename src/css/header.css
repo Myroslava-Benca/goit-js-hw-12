@@ -19,3 +19,106 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.search-form input{
+  width: 272px;
+  height: 35px;
+   gap: 8px;
+   border-radius: 6px;
+   border-width: 0.5px;
+   padding-left: 20px;
+}
+
+.search-form input:hover{
+  border-width: 1px;
+}
+
+.search-form input:focus{
+  border-width: 1px;
+  border-color: #4E75FF;
+  outline: none;
+  border-width: 1px;
+}
+
+
+.search-button {
+  margin-left: 20px;
+  width: 91px;
+height: 40px;
+padding: 8px, 16px, 8px, 16px;
+gap: 10px;
+background-color: #4E75FF;
+color: white;
+border-radius: 8px ;
+border: none;
+}
+
+.search-button:hover{
+  background-color: #6C8CFF;
+  border-color: #6C8CFF;
+}
+
+.gallery {
+     display: grid;
+grid-template-columns: repeat(5, 1fr); /* Створює 5 колонок однакової ширини */
+    gap: 16px; 
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.photo-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.load-more {
+  width: 91px;
+height: 40px;
+padding: 8px, 16px, 8px, 16px;
+gap: 10px;
+background-color: #4E75FF;
+color: white;
+border-radius: 8px ;
+border: none;
+display: block;
+margin: 0 auto;
+margin-top: 20px;
+}
+
+.load-more:hover{
+  background-color: #6C8CFF;
+  border-color: #6C8CFF;
+}
+
+.loader{
+  text-align: center;
+}
